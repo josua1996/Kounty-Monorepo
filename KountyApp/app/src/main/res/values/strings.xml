@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KountyApp</string>
+    <string name="welcome_message">Bienvenido</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="button_login">Ingresar</string>
+
+</resources>

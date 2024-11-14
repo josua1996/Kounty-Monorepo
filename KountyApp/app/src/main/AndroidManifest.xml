@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Permisos para el acceso a internet y estado de red -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:label="Kounty"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/Theme.KountyApp"
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true">
+
+        <!-- Actividad principal (inicio de la app) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.KountyApp"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Actividad de Login -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="Login" />
+
+        <!-- Actividad de Registro -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:label="Registro" />
+
+        <!-- Activity para los recordatorios -->
+        <activity
+            android:name=".ReminderActivity"
+            android:exported="false"
+            android:label="Recordatorio" />
+
+        <!-- Servicio de Firebase Messaging -->
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.RECEIVE">
+
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Configuración de notificación de Firebase -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_kounty_icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+    </application>
+
+</manifest>

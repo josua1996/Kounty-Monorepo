@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><!-- res/values/attrs.xml -->
+    <declare-styleable name="AppTheme">
+        <attr name="colorBackground" format="color"/>
+    </declare-styleable>
+</resources>

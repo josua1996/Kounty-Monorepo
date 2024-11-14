@@ -1,0 +1,8 @@
+# Ignorar archivos de Android Studio
+KountyApp/.idea/
+KountyApp/.gradle/
+KountyApp/app/build/
+
+# Ignorar archivos de Node.js
+asistente-impuestos/node_modules/
+asistente-impuestos/.env

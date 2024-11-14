@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "747212668737",
+    "project_id": "kounty-a3278",
+    "storage_bucket": "kounty-a3278.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747212668737:android:720a4a0d9b57bcb1582bc0",
+        "android_client_info": {
+          "package_name": "com.kountyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGu-KEiE7oVwVe5FKsIiVXbVv1X0V6Jzw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
